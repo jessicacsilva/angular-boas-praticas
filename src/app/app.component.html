@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let item of collection; trackBy: trackByFn">{{ item.id }}</li>
+</ul>
+<button (click)="getItems()">Refresh items</button>
+<button (click)="removeItems()">Remove items</button>
